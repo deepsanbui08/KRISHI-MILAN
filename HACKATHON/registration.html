@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registration.css">
+    <script src="registration.js"></script>
+</head>
+<body>
+    <div id="registration">
+        <h2>Registration</h2>
+        <form onsubmit="sendOTP(event)">
+            <input type="text" id="name" placeholder="Name" required><br>
+            <input type="text" id="contact" placeholder="Contact No" required><br>
+            <input type="text" id="aadhar" placeholder="Aadhar No" required><br>
+            <input type="text" id="otp" placeholder="Enter OTP" style="display:none;" required><br>
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

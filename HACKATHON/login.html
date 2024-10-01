@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <script type="module" src="firebaseauth.js"></script>
+    <link rel="stylesheet" href="login.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <!-- Button to switch between forms -->
+        <div class="toggle-buttons">
+            <button id="login-toggle" class="active">Login</button>
+            <button id="signup-toggle">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container" id="login-form">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-container" id="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="signup-name">Name</label>
+                    <input type="text" id="signup-name" placeholder="Your full name" required>
+                </div>
+    
+                <!-- Address Input -->
+                <div class="input-group">
+                    <label for="signup-add">Address</label>
+                    <input type="text" id="signup-add" placeholder="Your address" required>
+                </div>
+    
+                <!-- State Input -->
+                <div class="input-group">
+                    <label for="signup-state">State</label>
+                    <input type="text" id="signup-state" placeholder="Your state" required>
+                </div>
+    
+                <!-- Pin Code Input -->
+                <div class="input-group">
+                    <label for="pin_code">Pin Code</label>
+                    <input type="text" id="pin_code" name="pin" placeholder="Pin code" required>
+                </div>
+    
+                <!-- Phone Number Input -->
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+    
+                <!-- Password Input -->
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+#confirmation {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.tick {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: green;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
