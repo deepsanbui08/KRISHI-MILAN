@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Type</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- Added Google Font -->
+    <link rel="stylesheet" href="user_page.css">
+</head>
+<body>
+    <nav>
+        <label for="language-selector">Select Language:</label>
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="bn">Bengali</option>
+            <option value="ta">Tamil</option>
+            <option value="te">Telugu</option>
+            <option value="kn">Kannada</option>
+            <option value="ml">Malayalam</option>
+            <option value="mr">Marathi</option>
+            <option value="gu">Gujarati</option>
+            <option value="pa">Punjabi</option>
+            <option value="or">Odia</option>
+            <option value="as">Assamese</option>
+            <option value="ur">Urdu</option>
+            <option value="sa">Sanskrit</option>
+        </select>
+    </nav>
+
+    <div class="marquee-container">
+        <div class="marquee">
+            <h1 class="welcome-message">Welcome to Krishi Milan Website!</h1>
+        </div>
+    </div>
+
+    <div id="selection">
+        <div class="user-type-selection">
+            <h2>Select User Type</h2>
+            <div class="button-container">
+                <input type="button" id="retailer-btn" value="Retailer" onclick="selectUserType('Retailer')">
+                <input type="button" id="customer-btn" value="Customer" onclick="selectUserType('Customer')">
+                <input type="button" id="farmer-btn" value="Farmer" onclick="selectUserType('Farmer')">
+            </div>
+        </div>
+    </div>
+
+    <script src="user_page.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a modern, clean font */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #59f0ac; /* Light green background */
+}
+
+.otp-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+#otp-input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.message {
+    color: red;
+    margin-top: 15px;
+}
+
+.resend-container {
+    margin-top: 15px;
+}
+
+.resend-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.resend-link:hover {
+    color: #0056b3;
+}

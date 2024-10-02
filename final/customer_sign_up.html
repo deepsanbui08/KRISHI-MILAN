@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="retailer_sign_up.css">
+</head>
+<body>
+    <div class="form" id="signup-form">
+        <h2 id="signup-btn">Sign Up</h2>
+        <form id="retailer-signup-form">
+            <!-- Name Input -->
+            <div class="input-group">
+                <label for="signup-name">Name</label>
+                <input type="text" id="signup-name" placeholder="Your full name" required>
+            </div>
+
+            <!-- Address Input -->
+            <div class="input-group">
+                <label for="signup-add">Address</label>
+                <input type="text" id="signup-add" placeholder="Your address" required>
+            </div>
+
+            <!-- State Input -->
+            <div class="input-group">
+                <label for="signup-state">State</label>
+                <input type="text" id="signup-state" placeholder="Your state" required>
+            </div>
+
+            <!-- Pin Code Input -->
+            <div class="input-group">
+                <label for="pin_code">Pin Code</label>
+                <input type="text" id="pin_code" name="pin" placeholder="Pin code" required>
+            </div>
+
+            <!-- Phone Number Input -->
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+            </div>
+            <!-- Aadhaar Number Input -->
+            <div class="input-group">
+                <label for="aadhar">Aadhaar Number</label>
+                <input type="tel" id="aadhar" name="Aadhar" placeholder="0000-0000-0000" required>
+            </div>
+
+            <!-- Password Input -->
+            <div class="input-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Create a password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Sign Up</button>
+
+            <!-- Redirect to Login -->
+            <p>Already have an account? <input type="button" id="login-btn" value="Log in" onclick="selectUserType('login-btn')"></p><br>
+
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('retailer-signup-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // You can add logic here to handle form data, like sending it to a server.
+
+            // Redirect to OTP verification page
+            window.location.href = 'otp_verification.html'; // Redirect to OTP verification page
+        });
+
+        document.getElementById('login-btn').addEventListener('click', function() {
+            window.location.href = 'customer_login.html'; // Redirect to login page
+        });
+    </script>
+</body>
+</html>

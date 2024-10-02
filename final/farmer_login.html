@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up Page</title>
+    <link rel="stylesheet" href="farmer_login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Login Form -->
+            <div class="form" id="login-form">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0000000000" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p>Don't have an account? <input type="button" id="signup-btn" value="Sign Up"></p><br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Handle sign-up button click
+    document.getElementById('signup-btn').addEventListener('click', function() {
+        window.location.href = 'farmer_sign_up.html'; // Redirect to sign-up page
+    });
+
+    // Handle login form submission
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Dummy login validation (you can add real validation here)
+        const phone = document.getElementById('phone').value;
+        const password = document.getElementById('login-password').value;
+
+        // In real scenario, validate phone and password with your backend
+        if (phone === '0000000000' && password === 'password') {
+            // If valid, redirect to the farmer screen
+            window.location.href = 'farmer_screen.html'; // Redirect to farmer screen
+        } else {
+            // If invalid, show an error message
+            alert('Invalid phone number or password');
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Crop Upload</title>
+    <link rel="stylesheet" href="farmer_screen.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Upload Crop</h2>
+
+        <!-- Manual Entry Form -->
+        <div id="manual-upload-form">
+            <h3>Manual Crop Upload</h3>
+            <input type="text" id="crop-name" placeholder="Crop Name" required>
+            <input type="number" id="quantity" placeholder="Quantity (kg)" required>
+            <input type="number" id="price" placeholder="Price per kg" required>
+            <button id="manual-upload-btn">Upload Crop</button>
+        </div>
+
+        <!-- Image Selection Section -->
+        <h3>Select Crop Image</h3>
+        <input type="file" id="image-input" accept="image/*">
+        <div id="image-preview">
+            <img id="captured-image" alt="Selected Crop" />
+        </div>
+
+        <!-- Video Section for Camera Feed -->
+        <div id="video-section">
+            <h3>Scan Crop Using Camera</h3>
+            <video id="video" autoplay></video>
+            <button id="capture-btn">Capture</button>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <div id="result"></div>
+        </div>
+
+        <!-- Toggle Button for Video Section -->
+        <button id="toggle-camera-btn">Use Camera to Scan Crop</button>
+    </div>
+
+    <script src="farmer_screen.js"></script>
+</body>
+</html>

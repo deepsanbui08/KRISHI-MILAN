@@ -1,0 +1,15 @@
+#back-home-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s;
+}
+
+#back-home-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

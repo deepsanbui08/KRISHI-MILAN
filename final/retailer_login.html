@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up Page</title>
+    <link rel="stylesheet" href="retailer_login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Login Form -->
+            <div class="form" id="login-form">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p>Don't have an account? <input type="button" id="signup-btn" value="Sign Up" onclick="selectUserType('signup-btn')"></p><br>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script>
+    document.getElementById('signup-btn').addEventListener('click', function() {
+        window.location.href = 'retailer_sign_up.html'; // Redirect to signUp page.html
+    });
+    </script>
+</body>
+</html>

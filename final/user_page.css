@@ -1,0 +1,118 @@
+/* General styles */
+body {
+    font-family: 'Lobster', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Navigation (Select Language below welcome message but on the right) */
+nav {
+    position: absolute;
+    top: 140px;  /* Adjusted to keep language selector below welcome message */
+    right: 20px;  /* Positioned on the right side */
+}
+
+label {
+    color: #161616; /* Brighter yellow for better visibility */
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#language-selector {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for better contrast */
+    cursor: pointer;
+}
+
+/* Scrolling marquee effect */
+.marquee-container {
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    width: 100vw; /* Full width */
+    position: absolute;
+    top: 40px; /* Moved the welcome message higher */
+    text-align: center;
+}
+
+.marquee {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.welcome-message {
+    color: #f9f900; /* Changed to golden yellow for better contrast */
+    font-size: 40px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); /* Stronger shadow for readability */
+    font-weight: bold;
+}
+
+/* Main selection area */
+#selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.user-type-selection {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background for better contrast */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.user-type-selection h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #ffffff; /* White to contrast better against dark background */
+}
+
+/* Button styles */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-container input {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #6b8e23; /* Olive green button */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%; /* Full width */
+}
+
+.button-container input:hover {
+    background-color: #556b2f; /* Darker olive green on hover */
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
