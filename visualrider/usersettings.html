@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Settings - Visual Rider</title>
+    <link rel="stylesheet" href="usersettings.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Settings</h1>
+        </header>
+
+        <main>
+            <section class="settings-section">
+                <h2>Customization Options</h2>
+                <div class="settings-option">
+                    <label for="voice-feedback">Enable Voice Feedback:</label>
+                    <input type="checkbox" id="voice-feedback">
+                </div>
+
+                <div class="settings-option">
+                    <label for="sound-alerts">Enable Sound Alerts:</label>
+                    <input type="checkbox" id="sound-alerts">
+                </div>
+
+                <div class="settings-option">
+                    <label for="brightness-control">Screen Brightness:</label>
+                    <input type="range" id="brightness-control" min="0" max="100" value="50">
+                </div>
+
+                <button id="save-settings">Save Settings</button>
+            </section>
+
+            <button id="go-back">Back to Home</button>
+        </main>
+
+
+    </div>
+
+    <script src="usersettings.js"></script>
+</body>
+</html>

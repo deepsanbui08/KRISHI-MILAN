@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Info - Visual Rider</title>
+    <link rel="stylesheet" href="deviceinfo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Device Information</h1>
+        </header>
+
+        <main>
+            <section class="device-info">
+                <h2>Device Overview</h2>
+                <div class="info-box">
+                    <p><strong>Battery Level:</strong> <span id="battery-level">85%</span></p>
+                    <p><strong>Device Status:</strong> <span id="device-status">Idle</span></p>
+                    <p><strong>Connection:</strong> <span id="connection-status">Connected</span></p>
+                    <p><strong>Signal Strength:</strong> <span id="signal-strength">Excellent</span></p>
+                </div>
+                <button id="refresh-status">Refresh Status</button>
+            </section>
+
+
+
+            <button id="go-back">Back to Home</button>
+        </main>
+
+    </div>
+
+    <script src="deviceinfo.js"></script>
+</body>
+</html>

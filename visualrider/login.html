@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register with Voice Command</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Visual Rider</h1>
+
+        <!-- Login Form -->
+        <form id="login-form" class="active">
+            <h2>Login</h2>
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" required>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" required>
+
+            <button type="submit">Login</button>
+            
+            <p>Or login using your voice:</p>
+            <button type="button" id="voice-login-btn">🎤 Speak to Login</button>
+
+            <p>Don't have an account? <button type="button" id="show-registration-btn">Register here</button></p>
+        </form>
+
+        <!-- Registration Form -->
+        <form id="registration-form" class="hidden">
+            <h2>Register</h2>
+            <label for="register-username">Username:</label>
+            <input type="text" id="register-username" required>
+
+            <label for="register-password">Password:</label>
+            <input type="password" id="register-password" required>
+
+            <button type="submit">Register</button>
+            
+            <p>Or provide your details using voice:</p>
+            <button type="button" id="voice-fill-btn">🎤 Fill Details with Voice</button>
+
+            <p>Already have an account? <button type="button" id="show-login-btn">Login here</button></p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
